@@ -3,7 +3,8 @@
 
 <head>
    <meta charset="UTF-8">
-   <title>3uzduotis</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>3_uzduotis_2301</title>
    <style>
       * {
          box-sizing: border-box;
@@ -13,25 +14,30 @@
          margin: 0;
          padding: 0;
          height: 100%;
+         padding: 2rem;
+         box-shadow: 00px 20px 20px 00px rgb(207, 207, 209)inset;
+      }
+
+      .navtable,
+      .component {
+         box-shadow: 5px 5px 5px 5px rgb(222, 222, 222)inset;
       }
 
       main {
          width: 70%;
          display: block;
          float: left;
-         /*     background-color: rgb(55, 53, 173);*/
-         padding: 0 2% 0 2%;
+         /*       background-color: rgb(55, 53, 173);*/
+         padding: 0 1% 0 1%;
          margin-left: 0%;
       }
 
       nav {
-
          width: 30%;
          float: left;
-         /*     background-color: rgb(67, 173, 53);*/
+         /*      background-color: rgb(67, 173, 53);*/
          padding: 0% 2% 10% 2%;
          border-left: 8px solid rgb(154, 154, 155);
-
       }
 
       img {
@@ -39,11 +45,15 @@
          float: left;
          width: 45%;
          max-width: 200px;
-         padding: 5px;
+         padding: 2px;
          margin-bottom: 2%;
          margin-right: 2%;
-         border: 2px solid rgb(154, 154, 155);
+         border: 4px solid rgb(214, 214, 214);
       }
+
+      /*   .abaut p {
+         display: inline-block;
+      }*/
 
       .about::after {
          clear: both;
@@ -69,29 +79,43 @@
          justify-content: left;
          margin: 0%;
          padding: 1%;
-         background-color: rgb(5, 5, 110);
+         background-color: rgb(1, 91, 115);
          font-weight: bold;
-         color: rgb(248, 248, 252);
+         color: rgb(255, 255, 255);
+      }
+
+      .mane,
+      span {
+         display: inline;
       }
 
       h1 {
-         color: rgb(5, 5, 110);
+         color: rgb(51, 91, 115);
          margin-top: 0;
          margin-bottom: 0;
       }
 
+      a,
       span {
-         color: rgb(67, 67, 250)
+         display: inline-block;
+         color: rgb(3, 192, 222);
+      }
+
+      a {
+         font-weight: bold;
       }
 
       .text {
          line-height: 1.3;
          margin-top: 2%;
          margin-bottom: 3%;
+         text-align: justify;
       }
 
       .description p {
-         margin-top: 2%;
+         margin-top: 1%;
+         text-align: justify;
+
       }
 
       .description {
@@ -101,8 +125,6 @@
          padding-left: 2%;
          line-height: 1.3;
          /*    background-color: rgb(58, 190, 41);*/
-
-
       }
 
       nav p {
@@ -114,7 +136,6 @@
          margin-left: auto;
          margin-right: auto;
          padding-left: 7%;
-
       }
 
       .navtable {
@@ -124,8 +145,8 @@
          padding-left: 7%;
          height: 50px;
          width: 100%;
-         background-color: rgb(216, 216, 216);
-         border: 1px solid rgb(154, 154, 155);
+         background-color: rgb(236, 236, 236);
+         border: 1px solid rgb(220, 220, 220);
          font-size: 16px;
          font-weight: bold;
          color: rgb(250, 110, 67)
@@ -133,17 +154,24 @@
 
       .navheading {
          margin-top: 4%;
-         margin-bottom: 4%;
-         background-color: rgb(5, 5, 110);
+         margin-bottom: 0%;
+         background-color: rgb(1, 91, 115);
          color: white;
       }
 
       .component {
          display: flex;
          width: 100%;
-         background-color: rgb(216, 216, 216);
-         border-radius: 10px;
+         background-color: rgb(235, 235, 235);
          padding: 2%;
+         margin-top: 4%;
+         position: relative;
+
+         /*    height: 200px;*/
+         border-radius: 0.25em;
+         display: flex;
+         justify-content: center;
+         align-items: center;
       }
 
       .image {
@@ -157,13 +185,12 @@
          position: relative;
          display: flex;
          transform: scale(var(--ggs, 1));
-         width: 16px;
-         height: 16px;
-         border: 2px solid rgb(53, 202, 53);
+         width: 1rem;
+         height: 1rem;
+         border: 2px solid rgb(176, 219, 42);
          background: white;
          border-radius: 100%;
          margin-top: -4px;
-
       }
 
       .gg-zoom-out::after,
@@ -198,7 +225,7 @@
          transform: scale(var(--ggs, 1));
          width: 22px;
          height: 22px;
-         border: 2px solid rgb(53, 202, 53);
+         border: 2px solid rgb(176, 219, 42);
          border-radius: 22px
       }
 
@@ -217,8 +244,7 @@
 
       i {
          margin-right: 20px;
-         background-color: rgb(53, 202, 53);
-
+         background-color: rgb(176, 219, 42);
       }
 
       .gg-add {
@@ -227,7 +253,7 @@
          display: flex;
          width: 22px;
          height: 22px;
-         border: 2px solid rgb(53, 202, 53);
+         border: 2px solid rgb(176, 219, 42);
          transform: scale(var(--ggs, 1));
          border-radius: 22px
       }
@@ -260,7 +286,7 @@
          transform: scale(var(--ggs, 1));
          width: 20px;
          height: 16px;
-         border: 2px solid rgb(53, 202, 53);
+         border: 2px solid rgb(176, 219, 42);
          border-bottom: 0;
          background: white;
          box-shadow:
@@ -294,27 +320,24 @@
          top: 4px
       }
 
-      /*   #box {
-         width: 10em;
-         height: 6em;
-         background-color: #fff;
-         position: relative;
-         margin-left: 35%;
-      }*/
-
       #box {
-         /*    width: 0;
-         height:0;*/
-         display: flex;
-         border-top: 50px solid rgb(216, 216, 216);
+
+         display: block;
+         /*     height: 0px;
+         width: 0px;*/
+         border-top: 50px solid rgb(235, 235, 235);
          border-left: 50px solid transparent;
-         margin-left: 5%;
+         position: absolute;
+         bottom: -20px;
+         left: calc(50% + 70px);
+         top: calc(50% + 35px);
       }
 
       .end {
          display: flex;
          justify-content: flex-start;
          align-items: flex-start;
+         position: absolute;
          /*     background-color: tomato;*/
       }
 
@@ -326,8 +349,11 @@
          width: 100%;
       }
 
-      blockquote {
-         display: flex;
+      blockquote p {
+         padding: 0%;
+         text-align: justify;
+
+         /*     display: flex;*/
       }
 
       blockquote:before,
@@ -335,7 +361,7 @@
          font-family: FontAwesome;
          position: absolute;
          color: #abaeaf;
-         font-size: 50px;
+         font-size: 3.2rem;
       }
 
       blockquote:before {
@@ -343,8 +369,6 @@
          top: -12px;
          margin-right: 20px;
          top: -20px;
-
-
          right: 100%;
       }
 
@@ -361,7 +385,6 @@
       }
 
       .navtable:hover {
-         color: rgb(194, 61, 28);
          text-decoration: none;
          background-color: white;
          display: flex;
@@ -377,44 +400,96 @@
       }
 
       a:hover {
-         color: rgb(194, 61, 28);
+         color: rgb(1, 91, 115);
          text-decoration: none;
       }
 
       .navtable:hover .gg-add {
          display: none;
-
       }
 
       .navtable:hover .gg-remove {
          display: block;
+      }
+
+      @media screen and (max-width: 900px) {
+         main {
+            width: 100%;
+         }
+
+         nav {
+            display: none;
+         }
+
+         .navheading {
+            width: 100%;
+            display: block;
+            float: left;
+         }
+
+
+         .list span {
+            display: block;
+
+            width: 100%;
+            padding: 0;
+         }
+
+
+         img {
+            display: block;
+            margin: 0%;
+         }
+
+         /*   @media screen and (max-width: 400px) {*/
+         main {
+            padding: 0%;
+            margin: 0%;
+         }
+
+         .description p {
+            margin-top: 0%;
+         }
+
+         .name,
+         span {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+         }
+
+         .name {
+            background-color: rgb(1, 91, 115);
+            padding: 1%;
+
+         }
+      }
    </style>
 </head>
 
 <body>
    <main>
       <h1>Meet the HBCWeb Team</h1>
-      <div class="text">
+      <p class="text">
          HBCWeb is comprised of ultra-talanted and experienced designers, developers and programers.
          Learn more abaut each person by reading their descriptions below:
-      </div>
+      </p>
       <div class="list">
          <img src="photo1.jpg" alt="img1">
-         <div class="about">
-            <p class="name"> ROB CARLING<span>-DEVELOPMENT MANAGER</span></p>
-            <div class="description">
-               <p> Rob oversees the day-to-day operations of HBDWeb. From the initial clent interactions, to project
-                  planning,
-                  to the design phase and into development. Rob is also responsible for some design work seen in our
-                  <a href="https://www.google.com/" target="_blank">Portfolio</a>, including HBCWeb.com
-               </p>
-            </div>
+         <p class="name"> ROB CARLING<span>-DEVELOPMENT MANAGER</span></p>
+
+
+         <div class="description">
+            <p> Rob oversees the day-to-day operations of HBDWeb. From the initial clent interactions, to project
+               planning,
+               to the design phase and into development. Rob is also responsible for some design work seen in our
+               <a href="https://www.google.com/" target="_blank">Portfolio</a>, including HBCWeb.com
+            </p>
          </div>
       </div>
       <div class="list">
-
          <img src="photo2.jpg" alt="img2">
-
          <div class="about">
             <p class="name"> DUSTIN GREEN<span>-LEAD DEVELOPER</span></p>
             <div class="description">
@@ -425,12 +500,9 @@
                   HBCWeb.com</p>
             </div>
          </div>
-
       </div>
       <div class="list">
-
          <img src="photo3.jpg" alt="img3">
-
          <div class="about">
             <p class="name"> GLENN GENERAO<span>-GRAPHIC DESIGNER</span></p>
             <div class="description">
@@ -443,16 +515,14 @@
          </div>
       </div>
       <div class="list">
-
          <img src="photo4.jpg" alt="img4">
-
          <div class="about">
             <p class="name"> WES SAYAS<span>-LEAD PROGRAMMER</span></p>
             <div class="description">
                <p> Rob oversees the day-to-day operations of HBDWeb. From the initial clent interactions, to project
                   planning,
-                  to the design phase and into development. Rob is also responsible for some design work seen in our</p>
-
+                  to the design phase and into development. Rob is also responsible for some design work seen in our
+               </p>
             </div>
          </div>
       </div>
@@ -461,7 +531,6 @@
       <div>
          <p class="navheading"><i class="gg-zoom-out"></i> More Abaut HBCWeb...</p>
       </div>
-
       <div class="navtable">
          <i class="gg-add"></i>
          <i class="gg-remove"></i>
@@ -485,22 +554,15 @@
       <div>
          <p class="navheading"><i class="gg-comment"></i> What our clients are saying.</p>
       </div>
-
       <div class="component">
-         <blockquote class="quote">
-            While building my business I could not have imagined how crutila a website would possibly be. I
-            did my research and received
-         </blockquote>
+         <p> While building my business I could not have imagined how crutila a website would possibly be. I
+            did my research and received</p><span id="box"></span>
       </div>
 
-      <div class="end">
-         <a href="https://www.google.com/" target="_blank">View All Client Testimonials</a>
-         <div id="box"></div>
+      <a href="https://www.google.com/" target="_blank">View All Client Testimonials</a>
+
       </div>
    </nav>
-
-
-
 </body>
 
 </html>
